@@ -1,101 +1,356 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Poltek Group Employee Portal</title>
+<title>Poltek Employee Portal</title>
 
 <style>
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f3f5f7;
-    color: #222;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f3f5f7;
+    color:#222;
 }
+
+
+/* HEADER */
 
 header {
-    background: #123047;
-    color: white;
-    text-align: center;
-    padding: 40px;
+
+    height:110px;
+    background:#123047;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 40px;
+
 }
+
+
+/* LOGO */
 
 .logo {
-    width: 140px;
-    height: 80px;
-    background: white;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #123047;
-    font-weight: bold;
+
+    width:220px;
+    height:90px;
+
+    background:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:24px;
+    font-weight:bold;
+
+    color:#123047;
+
 }
+
+
+
+/* NAV BUTTONS */
+
+nav {
+
+    display:flex;
+    gap:15px;
+
+}
+
+
+nav button {
+
+    background:transparent;
+
+    border:2px solid white;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:5px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+nav button:hover {
+
+    background:#4b8bbe;
+
+}
+
+
+
+/* COMPANIES */
 
 .company-section {
-    background: white;
-    padding: 30px;
-    text-align: center;
+
+    background:white;
+
+    padding:20px;
+
+    text-align:center;
+
 }
+
+
+.company-section h2 {
+
+    margin-top:0;
+
+}
+
 
 .companies {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
 }
+
 
 .company {
-    background: #eee;
-    width: 150px;
-    height: 120px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+    width:150px;
+
+    height:100px;
+
+    background:#eeeeee;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
 }
 
-.employee {
-    padding: 40px;
-    text-align: center;
+
+
+
+/* SEARCH */
+
+.search {
+
+    text-align:center;
+
+    padding:25px;
+
 }
 
-.card {
-    background: white;
-    max-width: 500px;
-    margin: auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px #ccc;
+
+.search input {
+
+    width:400px;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
 }
+
+
+
+/* MAIN AREA */
+
+.main {
+
+    display:flex;
+
+    gap:40px;
+
+    padding:30px 70px;
+
+}
+
+
+
+/* TIMELINE */
 
 .timeline {
-    padding: 40px;
+
+    width:55%;
+
+    position:relative;
+
 }
+
+
+.line {
+
+    position:absolute;
+
+    left:40px;
+
+    top:20px;
+
+    bottom:20px;
+
+    width:4px;
+
+    background:#123047;
+
+}
+
 
 .event {
-    background: white;
-    margin: 20px auto;
-    max-width: 700px;
-    padding: 20px;
-    border-left: 6px solid #123047;
-    border-radius: 10px;
+
+    position:relative;
+
+    margin:50px 0;
+
+    padding-left:90px;
+
 }
 
-button {
-    background: #123047;
-    color: white;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
+
+.circle {
+
+    position:absolute;
+
+    left:25px;
+
+    top:5px;
+
+    width:30px;
+
+    height:30px;
+
+    background:#123047;
+
+    border-radius:50%;
+
 }
+
+
+.event p {
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    box-shadow:0 3px 10px #ccc;
+
+}
+
+
+
+/* PROFILE */
+
+.profile {
+
+    width:35%;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 3px 10px #ccc;
+
+}
+
+
+
+.photo {
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    background:#ddd;
+
+    margin:auto;
+
+}
+
+
+
+.profile h2 {
+
+    text-transform:lowercase;
+
+}
+
+
+
+.note {
+
+    font-size:14px;
+
+}
+
+
+
+/* BUTTON */
+
+.search-button {
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+.search-button button {
+
+    background:#123047;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:25px;
+
+    font-size:16px;
+
+}
+
+
+
+/* FOOTER */
 
 footer {
-    background: #123047;
-    color: white;
-    text-align: center;
-    padding: 20px;
+
+    background:#123047;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
 }
+
+
 
 </style>
 
@@ -105,25 +360,43 @@ footer {
 <body>
 
 
+
 <header>
 
+
 <div class="logo">
+
 POLTEK LOGO
+
 </div>
 
-<h1>Poltek Group</h1>
 
-<p>Employee History Portal</p>
+<nav>
+
+<button>Corporate</button>
+
+<button>About</button>
+
+<button>Careers</button>
+
+<button>Investors</button>
+
+</nav>
+
 
 </header>
 
 
 
+
 <section class="company-section">
 
-<h2>Poltek Companies</h2>
+
+<h2>Employees working at:</h2>
+
 
 <div class="companies">
+
 
 <div class="company">Cryofoods Logo</div>
 
@@ -133,30 +406,6 @@ POLTEK LOGO
 
 <div class="company">Company 4 Logo</div>
 
-</div>
-
-</section>
-
-
-
-
-<section class="employee">
-
-<h2>Employee Search Result</h2>
-
-
-<div class="card">
-
-<h2>Daniel Mawdesley</h2>
-
-<p><b>Company:</b> Cryofoods</p>
-
-<p><b>Length of Service:</b> 2 Years</p>
-
-<p><b>Hours Per Week:</b> 30 Hours</p>
-
-<p><b>Started Employment:</b> Age 16</p>
-
 
 </div>
 
@@ -164,35 +413,71 @@ POLTEK LOGO
 </section>
 
 
+
+
+
+<section class="search">
+
+
+<input value="Daniel Mawdesley">
+
+
+</section>
+
+
+
+
+
+<div class="main">
 
 
 <section class="timeline">
 
-<h2>Warehouse Timeline</h2>
+
+<div class="line"></div>
+
 
 
 <div class="event">
 
-<h3>Year 1 - Warehouse Operative</h3>
+<div class="circle"></div>
 
 <p>
-Daniel started at Cryofoods working within warehouse operations.
-Tasks included stock movement, order preparation and distribution support.
+<strong>27 July 2024</strong><br>
+Mawdesley begins work at Cryofoods
 </p>
 
 </div>
 
 
+
+
 <div class="event">
 
-<h3>Year 2 - Warehouse Experience Development</h3>
+<div class="circle"></div>
 
 <p>
-Developed experience with warehouse processes, teamwork,
-organisation and daily operations.
+<strong>27 July 2025</strong><br>
+Mawdesley reaches 1 year at Cryofoods
 </p>
 
 </div>
+
+
+
+
+
+<div class="event">
+
+<div class="circle"></div>
+
+<p>
+<strong>27 March 2026</strong><br>
+Mawdesley leaves Cryofoods
+</p>
+
+</div>
+
 
 
 </section>
@@ -200,13 +485,58 @@ organisation and daily operations.
 
 
 
-<section style="text-align:center; padding:40px;">
+
+
+<section class="profile">
+
+
+<div class="photo"></div>
+
+
+<h2>Daniel Mawdesley</h2>
+
+
+<p>
+<b>Company:</b><br>
+Cryofoods
+</p>
+
+
+<p>
+<b>Age:</b><br>
+18
+</p>
+
+
+<p>
+<b>Serving Managers:</b><br>
+Robert Kavanaugh
+</p>
+
+
+<p class="note">
+* Not currently employed with POLTEK
+</p>
+
+
+</section>
+
+
+
+</div>
+
+
+
+
+
+<div class="search-button">
 
 <button>
-Search Another Employee
+Search for a different employee
 </button>
 
-</section>
+</div>
+
 
 
 
