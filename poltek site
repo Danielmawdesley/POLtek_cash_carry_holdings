@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poltek Group Employee Portal</title>
 
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+    color: #222;
+}
+
+header {
+    background: #123047;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.logo {
+    width: 140px;
+    height: 80px;
+    background: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #123047;
+    font-weight: bold;
+}
+
+.company-section {
+    background: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.companies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.company {
+    background: #eee;
+    width: 150px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.employee {
+    padding: 40px;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px #ccc;
+}
+
+.timeline {
+    padding: 40px;
+}
+
+.event {
+    background: white;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    border-left: 6px solid #123047;
+    border-radius: 10px;
+}
+
+button {
+    background: #123047;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+footer {
+    background: #123047;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+POLTEK LOGO
+</div>
+
+<h1>Poltek Group</h1>
+
+<p>Employee History Portal</p>
+
+</header>
+
+
+
+<section class="company-section">
+
+<h2>Poltek Companies</h2>
+
+<div class="companies">
+
+<div class="company">Cryofoods Logo</div>
+
+<div class="company">Company 2 Logo</div>
+
+<div class="company">Company 3 Logo</div>
+
+<div class="company">Company 4 Logo</div>
+
+</div>
+
+</section>
+
+
+
+
+<section class="employee">
+
+<h2>Employee Search Result</h2>
+
+
+<div class="card">
+
+<h2>Daniel Mawdesley</h2>
+
+<p><b>Company:</b> Cryofoods</p>
+
+<p><b>Length of Service:</b> 2 Years</p>
+
+<p><b>Hours Per Week:</b> 30 Hours</p>
+
+<p><b>Started Employment:</b> Age 16</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="timeline">
+
+<h2>Warehouse Timeline</h2>
+
+
+<div class="event">
+
+<h3>Year 1 - Warehouse Operative</h3>
+
+<p>
+Daniel started at Cryofoods working within warehouse operations.
+Tasks included stock movement, order preparation and distribution support.
+</p>
+
+</div>
+
+
+<div class="event">
+
+<h3>Year 2 - Warehouse Experience Development</h3>
+
+<p>
+Developed experience with warehouse processes, teamwork,
+organisation and daily operations.
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section style="text-align:center; padding:40px;">
+
+<button>
+Search Another Employee
+</button>
+
+</section>
+
+
+
+
+<footer>
+
+Poltek Group © 2026
+
+</footer>
+
+
+</body>
+</html>
