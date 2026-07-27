@@ -30,9 +30,11 @@ header {
 }
 
 
+/* POLTEK LOGO */
+
 .logo {
 
-    width:250px;
+    width:260px;
     height:95px;
 
     background:white;
@@ -41,14 +43,20 @@ header {
     align-items:center;
     justify-content:center;
 
-    color:#123047;
-    font-size:26px;
-    font-weight:bold;
+}
+
+
+.logo img {
+
+    max-width:230px;
+    max-height:85px;
 
 }
 
 
 
+
+/* NAVIGATION */
 
 nav {
 
@@ -85,7 +93,7 @@ nav button:hover {
 
 
 
-/* COMPANY SECTION */
+/* COMPANIES */
 
 
 .company-section {
@@ -95,13 +103,6 @@ nav button:hover {
     padding:20px;
 
     text-align:center;
-
-}
-
-
-.company-section h2 {
-
-    margin-bottom:20px;
 
 }
 
@@ -121,7 +122,7 @@ nav button:hover {
 
     width:150px;
 
-    height:100px;
+    height:110px;
 
     background:#eeeeee;
 
@@ -129,9 +130,27 @@ nav button:hover {
 
     display:flex;
 
+    align-items:center;
+
     justify-content:center;
 
-    align-items:center;
+    flex-direction:column;
+
+}
+
+
+.company img {
+
+    max-width:120px;
+
+    max-height:70px;
+
+}
+
+
+.company p {
+
+    margin:5px;
 
 }
 
@@ -152,41 +171,48 @@ nav button:hover {
 
 .search-box {
 
+    width:450px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:30px;
+
     display:flex;
 
-    justify-content:center;
-
     align-items:center;
+
+    padding:5px 20px;
+
+    box-shadow:0 3px 10px #ccc;
 
 }
 
 
 .search-icon {
 
-    background:white;
+    font-size:22px;
 
-    padding:15px;
-
-    border-radius:8px 0 0 8px;
-
-    font-size:20px;
+    margin-right:15px;
 
 }
 
 
-input {
-
-    width:400px;
-
-    padding:15px;
+.search-box input {
 
     border:none;
 
-    border-radius:0 8px 8px 0;
+    outline:none;
+
+    width:100%;
 
     font-size:18px;
 
+    padding:12px;
+
 }
+
 
 
 
@@ -280,7 +306,6 @@ input {
 
 
 
-
 /* PROFILE */
 
 
@@ -307,14 +332,26 @@ input {
 
     height:130px;
 
-    background:#ddd;
-
     border-radius:50%;
+
+    background:#ddd;
 
     margin:auto;
 
+    overflow:hidden;
+
 }
 
+
+.photo img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
 
 
 .profile h2 {
@@ -322,7 +359,6 @@ input {
     text-transform:none;
 
 }
-
 
 
 .note {
@@ -362,7 +398,7 @@ input {
 
     cursor:pointer;
 
-    transition:.3s;
+    transition:0.3s;
 
 }
 
@@ -392,19 +428,17 @@ footer {
 }
 
 
-
 .legal {
 
     font-size:11px;
 
     line-height:1.5;
 
-    margin-top:20px;
-
     color:#ddd;
 
-}
+    margin-top:20px;
 
+}
 
 
 </style>
@@ -421,7 +455,7 @@ footer {
 
 <div class="logo">
 
-POLTEK LOGO
+<img src="images/poltek-logo.png">
 
 </div>
 
@@ -445,22 +479,56 @@ POLTEK LOGO
 
 
 
+
+
 <section class="company-section">
 
 
 <h2>Find employees and past employees of:</h2>
 
 
+
 <div class="companies">
 
 
-<div class="company">Cryofoods Logo</div>
+<div class="company">
 
-<div class="company">Company 2 Logo</div>
+<img src="images/cryofoods-logo.png">
 
-<div class="company">Company 3 Logo</div>
+<p>Cryofoods</p>
 
-<div class="company">Company 4 Logo</div>
+</div>
+
+
+
+<div class="company">
+
+<img src="images/company2-logo.png">
+
+<p>Company 2</p>
+
+</div>
+
+
+
+<div class="company">
+
+<img src="images/company3-logo.png">
+
+<p>Company 3</p>
+
+</div>
+
+
+
+<div class="company">
+
+<img src="images/company4-logo.png">
+
+<p>Company 4</p>
+
+</div>
+
 
 
 </div>
@@ -471,13 +539,18 @@ POLTEK LOGO
 
 
 
+
+
 <section class="search">
 
 
 <div class="search-box">
 
+
 <div class="search-icon">
+
 🔍
+
 </div>
 
 
@@ -494,7 +567,9 @@ POLTEK LOGO
 
 
 
+
 <div class="main">
+
 
 
 <section class="timeline">
@@ -504,14 +579,16 @@ POLTEK LOGO
 
 
 
-
 <div class="event">
 
 <div class="circle"></div>
 
 <p>
+
 <strong>27 July 2024</strong><br><br>
+
 Mawdesley begins work at Cryofoods
+
 </p>
 
 </div>
@@ -524,8 +601,11 @@ Mawdesley begins work at Cryofoods
 <div class="circle"></div>
 
 <p>
+
 <strong>27 July 2025</strong><br><br>
+
 Mawdesley reaches 1 year at Cryofoods
+
 </p>
 
 </div>
@@ -538,12 +618,14 @@ Mawdesley reaches 1 year at Cryofoods
 <div class="circle"></div>
 
 <p>
+
 <strong>22 March 2026</strong><br><br>
+
 Mawdesley leaves Cryofoods
+
 </p>
 
 </div>
-
 
 
 
@@ -557,33 +639,52 @@ Mawdesley leaves Cryofoods
 <section class="profile">
 
 
-<div class="photo"></div>
+
+<div class="photo">
+
+<img src="images/daniel-photo.png">
+
+</div>
+
 
 
 <h2>Daniel Mawdesley</h2>
 
 
 <p>
+
 <b>Company:</b><br>
+
 Cryofoods (1 year 8 months)
+
 </p>
 
 
 <p>
+
 <b>Age:</b><br>
+
 18
+
 </p>
 
 
+
 <p>
+
 <b>Serving Managers:</b><br>
+
 Robert Kavanaugh
+
 </p>
 
 
 <p class="note">
+
 * Not currently employed with POLTEK
+
 </p>
+
 
 
 </section>
@@ -600,7 +701,9 @@ Robert Kavanaugh
 <div class="search-button">
 
 <button>
+
 Search for a different employee
+
 </button>
 
 </div>
@@ -618,45 +721,32 @@ Poltek Group © 2026
 </p>
 
 
-
 <div class="legal">
+
 
 <strong>Terms and Conditions & Data Protection Notice</strong><br><br>
 
-This employee information portal is an internal demonstration platform
-designed to provide users with access to employment history,
-company affiliation and workforce information relating to current and
-previous employees of Poltek Group companies. Access to this portal is
-unrestricted while information contained within is intended solely for
-legitimate business purposes.
 
-Poltek Group is committed to respecting the privacy and rights of all
-individuals whose information may be processed through its systems.
-Personal data is handled in accordance with applicable United Kingdom
-data protection legislation, including the UK General Data Protection
-Regulation (UK GDPR) and the Data Protection Act 2018.
+This employee information portal is a demonstration platform designed
+for authorised users to review employment history information relating
+to current and previous employees of Poltek Group companies.
 
-Information displayed through this portal is processed only where an
-appropriate lawful basis exists and where necessary for legitimate
-organisational activities, including workforce management, employment
-verification, operational planning and maintaining accurate employment
-records.
+The processing of personal information through this portal is intended
+to follow the requirements of UK data protection legislation including
+the UK General Data Protection Regulation and the Data Protection Act
+2018.
 
-Where required, individuals are informed about the processing of their
-personal information and appropriate permissions or acknowledgements are
-obtained. The portal is designed to follow principles of transparency,
-fairness, accuracy, security and accountability.
+Poltek Group is committed to transparency, fairness, security and
+responsible handling of personal information. Access to employee
+information should only occur where a legitimate business requirement
+exists and appropriate permissions have been provided.
 
-Poltek Group does not intend for this portal to be used for unauthorised
-access, disclosure, copying or distribution of personal information.
-Users are responsible for ensuring that they access information only
-where they have appropriate authorisation and a valid business reason.
+Users must ensure information accessed through this portal is handled
+confidentially and is not shared with unauthorised persons.
 
-Reasonable organisational and technical measures are maintained to help
-protect information from accidental loss, misuse, alteration or
-unauthorised access. Individuals retain rights regarding their personal
-information, including rights relating to access, correction and
-information handling where applicable under UK data protection law.
+This example interface has been created for demonstration purposes and
+does not represent a final legal agreement or official company policy.
+
 
 </div>
 
